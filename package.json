@@ -1,0 +1,22 @@
+{
+  "name": "followupapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parammittal16/FollowUpAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parammittal16/FollowUpAPI/issues"
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
