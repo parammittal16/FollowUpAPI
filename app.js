@@ -8,13 +8,11 @@ const client = new Client({
   connectionString: dbConnectionURL,
   ssl: true,
 });
-
+client.connect();
 app.get('/', function (req, res) {
-  client.connect();
   client.query("SELECT * FROM link;", (err, result) => {
     if (err) throw err;
     res.send(result.rows);
-    client.end();
   });
 });
 
