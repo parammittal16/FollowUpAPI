@@ -30,7 +30,7 @@ pg.defaults.ssl = true;
 // });
 app.get('/', function (req, res) {
   Product.create({
-    title: 'sds',
+    title: 'sds4',
     price: 45.2
   })
   .then(result => {
