@@ -31,6 +31,7 @@ const Candidate = sequelize.define('candidate', {
             is: ["/^[6-9][0-9]{9}$/"]
         }
     }
-});
+}
+);
 
 module.exports = Candidate;

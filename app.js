@@ -14,10 +14,10 @@ pg.defaults.ssl = true;
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(passport.initialize());
-app.get('/welcome', (req, res) => {
-  res.status(200).send("welcome to followup");
-})
-// app.use('/api', routes);
+// app.get('/welcome', (req, res) => {
+//   res.status(200).send("welcome to followup");
+// })
+app.use('/api', routes);
 
 
 sequelize
