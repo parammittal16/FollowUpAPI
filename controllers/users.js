@@ -19,10 +19,10 @@ module.exports = {
         });
         Promise.all([query, verifyPassword]).then(([resA, resB]) => {
             if(resB === true) {
-                const token = config.generateToken({id: resA.id}, '24h');
+                const token = config.generateToken({id: resA.id}, '3h');
                 resA.password = undefined;
                 resA.id = undefined;
-                res.status(200).json({user: resA, token: token});
+                res.status(200).json({user: resA, token: token, expiresIn: 10800});
             } else if(resB === false) {
                 res.status(401).json({err: "Unauthorized"});
             } else if(resB === 0) {
