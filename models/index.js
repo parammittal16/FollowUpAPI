@@ -11,6 +11,7 @@ const models = {
   Candidates: Candidates
   
 };
+// associations
 
 const db = {
   ...models,
